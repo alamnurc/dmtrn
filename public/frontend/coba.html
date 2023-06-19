@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Modal title
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--============================-->
+    <button
+      class="btn btn-card-pres px-4 mt-4"
+      type="button"
+      data-toggle="modal"
+      data-target="#modalPresensi"
+    >
+      Presensi
+    </button>
+    <div
+      class="modal fade"
+      id="modalPresensi"
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="modalPresensiLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="modalPresensiLabel">
+              Presensi Anda Terekam
+            </h1>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="getPresensi">
+            Presensi anda terekam pada hari :
+          </div>
+          <div class="modal-footer">
+            <a
+              href="#"
+              class="btn btn-card-tgs px-4 mt-4"
+              type="button"
+              data-dismiss="modal"
+              >Selesai</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modalfade"
+      id="tugasPertama"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="tugasPertamaLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="tugasPertamaLabel">
+              Tugas Pertama
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>
+                <span class="title-profil">Judul</span>
+                <div class="card">
+                  <div class="card-body">
+                    <span id="#">Tugas Pertama</span>
+                  </div>
+                </div>
+              </li>
+              <li class="">
+                <span class="title-profil"> Tanggal </span>
+                <div class="card">
+                  <card-body><span id="#">05 Mei 2023</span></card-body>
+                </div>
+              </li>
+              <li>
+                <span class="title-profil">Rekap Tugas</span>
+                <div class="card">
+                  <div class="card-body">
+                    <span id="#"
+                      >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.</span
+                    >
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span class="title-profil">File</span>
+                <div class="card">
+                  <div class="card-body">
+                    <span id="#">Nama File tugas.pdf</span>
+                    <span
+                      class="bx bxs-download"
+                      style="margin-left: 150px"
+                    ></span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
